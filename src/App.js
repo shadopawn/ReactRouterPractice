@@ -21,6 +21,9 @@ export default function App() {
             <li>
               <Link to="/users">Users</Link>
             </li>
+            <li>
+              <Link to="/New">New</Link>
+            </li>
           </ul>
         </nav>
 
@@ -32,6 +35,9 @@ export default function App() {
           </Route>
           <Route path="/users">
             <Users />
+          </Route>
+          <Route path="/new">
+            <New />
           </Route>
           <Route path="/">
             <Home />
@@ -52,4 +58,8 @@ function About() {
 
 function Users() {
   return <h2>Users</h2>;
+}
+
+function New(){
+  return <h2>New</h2>
 }
